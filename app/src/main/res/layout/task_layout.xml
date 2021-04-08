@@ -1,5 +1,6 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
     app:cardElevation="4dp"
@@ -13,12 +14,12 @@
         android:padding="8dp">
 
         <CheckBox
-            android:id="@+id/todo_checkbox"
-            android:layout_width="match_parent"
+            android:id="@+id/todoCheckBox"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="This is a sample task inside the application"
-            android:buttonTint="#CD5C5C"
-            android:paddingLeft="8dp" />
+            tool:text="This is a sample task inside application"
+            android:paddingStart="8dp"
+            android:buttonTint="@color/myThemeColor"/>
 
     </RelativeLayout>
 

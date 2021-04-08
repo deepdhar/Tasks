@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_width="match_parent">
+    tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/text_task"
+        android:id="@+id/tasksText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tasks"
         android:textStyle="bold"
-        android:fontFamily="sans-serif-light"
         android:textColor="@color/black"
-        android:layout_marginLeft="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
-        android:textSize="32sp" />
+        android:layout_marginBottom="16dp"
+        android:textSize="32sp"
+        android:fontFamily="sans-serif-medium"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/tasksRecyclerView"
-        android:layout_below="@id/text_task"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
+        android:id="@+id/tasksRecylcerView"
+        android:layout_below="@id/tasksText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:nestedScrollingEnabled="true"/>
 
@@ -29,13 +31,10 @@
         android:id="@+id/fab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginRight="32dp"
-        android:layout_marginBottom="32dp"
-        android:backgroundTint="#CD5C5C"
-        android:src="@drawable/ic_baseline_add"
-        app:backgroundTint="#FFFFFF" />
-
+        android:layout_alignParentEnd="true"
+        android:layout_margin="32dp"
+        android:backgroundTint="@color/myThemeColor"
+        android:src="@drawable/ic_baseline_add"/>
 
 </RelativeLayout>

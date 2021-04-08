@@ -8,6 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="myThemeColor">#CD5C5C</color>
-    <color name="editColor">#3CB371</color>
-    <color name="deleteColor">#DC143C</color>
+    <color name="deleteColor">#B22222</color>
+    <color name="editColor">#28a428</color>
 </resources>

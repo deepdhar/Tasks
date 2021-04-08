@@ -1,27 +1,26 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/apk/res-auto"
-    android:layout_width="wrap_content"
-    android:layout_height="match_parent">
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
 
     <EditText
-        android:id="@+id/new_task_text"
+        android:id="@+id/newTaskText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@null"
         android:textAppearance="@style/TextAppearance.AppCompat.Medium"
-        android:hint="New Task"/>
+        android:hint=" New Task"/>
 
     <Button
-        android:id="@+id/new_task_button"
+        android:id="@+id/newTaskButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/new_task_text"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="8dp"
-        android:background="@android:color/transparent"
+        android:layout_below="@id/newTaskText"
+        android:layout_alignParentEnd="true"
+        android:textSize="16sp"
         android:text="Save"
         android:textColor="@android:color/darker_gray"
-        android:textAllCaps="false"/>
+        android:textAllCaps="false"
+        android:background="@android:color/transparent"/>
 
 </RelativeLayout>
