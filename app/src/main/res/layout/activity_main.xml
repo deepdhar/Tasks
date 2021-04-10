@@ -10,7 +10,7 @@
         android:id="@+id/tasksText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tasks"
+        android:text="Tasks."
         android:textColor="@color/black"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
