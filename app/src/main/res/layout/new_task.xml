@@ -20,6 +20,7 @@
         android:layout_alignParentEnd="true"
         android:textSize="16sp"
         android:text="Save"
+        android:textStyle="bold"
         android:textColor="@android:color/darker_gray"
         android:textAllCaps="false"
         android:background="@android:color/transparent"/>

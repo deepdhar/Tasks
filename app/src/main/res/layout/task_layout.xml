@@ -3,19 +3,20 @@
     xmlns:tool="http://schemas.android.com/tools"
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    app:cardElevation="4dp"
+    app:cardElevation="8dp"
     app:cardCornerRadius="8dp"
     android:layout_marginHorizontal="16dp"
     android:layout_marginVertical="8dp">
 
     <RelativeLayout
+        android:id="@+id/taskRelativeLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="8dp">
 
         <CheckBox
             android:id="@+id/todoCheckBox"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             tool:text="This is a sample task inside application"
             android:paddingStart="8dp"
