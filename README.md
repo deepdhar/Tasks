@@ -1,14 +1,13 @@
 # To-Do-List-App
-A simple To-Do List mobile application to list down your tasks.
+A To-Do List mobile application to list down your tasks.
 
 ---
 
-## Screenshot
-<p align="center">
-<img width="400" height="862" src="https://user-images.githubusercontent.com/53803245/114268881-1a410880-9a21-11eb-9f0e-46f159df2709.png"/> 
-<img width="400" height="862" src="https://user-images.githubusercontent.com/53803245/114269236-7442cd80-9a23-11eb-86fc-99c038782aba.png"/>
-<img width="400" height="862" src="https://user-images.githubusercontent.com/53803245/114269291-e4e9ea00-9a23-11eb-821c-e455abed7f24.png"/>
-</p>
+## Screenshots
+<img src="https://user-images.githubusercontent.com/53803245/156873788-c5528665-d4de-4415-b333-ae9aad72e03b.png"/>
+
+## Motive
+The app shows CRUD(Create, Read, Update, Delete) operation of local database system. It uses Sqlite to store data locally in the device storage. User can add tasks, close the app, clear from background and still find their task list when opened again.
 
 ## Techstack Used
 - Java
