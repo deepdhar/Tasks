@@ -4,37 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="#FFE3E3"
+    android:paddingHorizontal="10dp"
+    tools:context=".activities.MainActivity">
 
     <TextView
-        android:id="@+id/tasksText"
+        android:id="@+id/headerTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tasks."
-        android:textColor="@color/black"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"
-        android:textSize="32sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="55dp"
         android:fontFamily="@font/pacifico_regular"
-        android:layout_centerHorizontal="true"/>
+        android:text="Tasks"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/noDataTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="add a task."
+        android:textSize="20sp"
+        android:textColor="#989898"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/tasksRecyclerView"
-        android:layout_below="@id/tasksText"
+        android:id="@+id/homeRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        android:nestedScrollingEnabled="true"/>
+        android:layout_below="@id/headerTextView"
+        tools:listitem="@layout/item_task"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/homeFabButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_margin="32dp"
-        android:backgroundTint="@color/myThemeColor"
-        android:src="@drawable/ic_baseline_add"/>
+        android:layout_alignParentBottom="true"
+        android:layout_margin="25dp"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/appThemeColor"
+        app:tint="@color/white" />
 
 </RelativeLayout>

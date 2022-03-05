@@ -7,8 +7,6 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="myThemeColor">#CD5C5C</color>
-    <color name="myThemeColor2">#c94f4f</color>
-    <color name="deleteColor">#B22222</color>
-    <color name="editColor">#28a428</color>
+    <color name="appThemeColor">#DF5E5E</color>
+    <color name="appThemeColor2">#C54A4A</color>
 </resources>
