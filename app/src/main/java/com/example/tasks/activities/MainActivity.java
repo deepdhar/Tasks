@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
     RecyclerView recyclerView;
     TextView noData;
 
+    private int backFlag = 0;
+
     TaskDatabase taskDb;
     ArrayList<String> task_id, task_name;
     public TaskAdapter adapter;
@@ -74,6 +76,15 @@ public class MainActivity extends AppCompatActivity {
                 task_id.add(cursor.getString(0));
                 task_name.add(cursor.getString(1));
             }
+        }
+    }
+
+    @Override
+    public void onBackPressed() {
+        if(backFlag==0) {
+            backFlag = 1;
+        } else {
+            super.onBackPressed();
         }
     }
 }
