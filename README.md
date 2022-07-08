@@ -1,6 +1,7 @@
 # Tasks
 
 A To-Do List mobile application to list down your tasks.
+Get it in Play Store: https://play.google.com/store/apps/details?id=com.deep.tasks
 
 ---
 
