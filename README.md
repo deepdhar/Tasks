@@ -1,4 +1,5 @@
-# To-Do-List-App
+# Tasks
+
 A To-Do List mobile application to list down your tasks.
 
 ---
